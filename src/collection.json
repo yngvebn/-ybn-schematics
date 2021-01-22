@@ -1,0 +1,18 @@
+{
+    "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "extends": "@schematics/angular",
+    "schematics": {
+        "component": {
+            "aliases": [ "c" ],
+            "description": "Create an Angular component with Storybook stories.",
+            "factory": "./hello/index#component",
+            "schema": "./hello/schema.json"
+        },
+        "atom": {
+            "aliases": [ "at" ],
+            "description": "Create an Angular atom with module.",
+            "factory": "./hello/index#atom",
+            "schema": "./hello/schema.json"
+        }
+    }
+}
