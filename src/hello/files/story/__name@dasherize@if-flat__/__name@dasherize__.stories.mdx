@@ -1,0 +1,26 @@
+import { Story, Meta, ArgsTable, Source, Title, Description } from '@storybook/addon-docs/blocks';
+import { <%= componentName %> } from './<%= componentFilename %>';
+<% if (hasModule) { %>import { <%= moduleName %> } from './<%= moduleFilename %>';<% } %>
+import { moduleMetadata } from '@storybook/angular';
+
+<Meta title="<%= classify(title) %>/<%= classify(name) %>" component={<%= componentName %>} decorators={[moduleMetadata({
+    <% if (hasModule) { %>imports: [<%= moduleName %>]<% } %><% if (!hasModule) { %>declarations: [<%= componentName %>]<% } %>
+})]} />
+
+<Title />
+
+<Description />
+
+
+export const Template = (args) => ({
+    props: args
+});
+
+<Story name="<%= componentName %>" args={{}}>
+    {Template.bind({})}
+</Story>
+
+<Source story="<%= componentName %>" />
+
+<ArgsTable story="<%= componentName %>" />
+

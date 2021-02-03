@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "HelloSchematic",
+    "title": "Hello Options Schema",
+    "type": "object",
+    "description": "Says hello to someone",
+    "properties": {
+        "path": {
+            "type": "string",
+            "format": "path",
+            "description": "The path at which to create the component file, relative to the current workspace. Default is a folder with the same name as the component in the project root.",
+            "visible": false
+        },
+        "mdx": {
+            "type": "boolean",
+            "default": false,
+            "description": "When true, generate a story as mdx",
+            "x-user-analytics": 19
+        },
+        "flat": {
+            "type": "boolean",
+            "description": "When true, creates the new files at the top level of the current project.",
+            "default": true
+        }
+    }
+}

@@ -1,0 +1,26 @@
+import { Story, Meta, ArgsTable, Source, Title, Description } from '@storybook/addon-docs/blocks';
+import { AppComponent } from './app.component';
+
+import { moduleMetadata } from '@storybook/angular';
+
+<Meta title="App/App" component={AppComponent} decorators={[moduleMetadata({
+    declarations: [AppComponent]
+})]} />
+
+<Title />
+
+<Description />
+
+
+export const Template = (args) => ({
+    props: args
+});
+
+<Story name="AppComponent" args={{}}>
+    {Template.bind({})}
+</Story>
+
+<Source story="AppComponent" />
+
+<ArgsTable story="AppComponent" />
+

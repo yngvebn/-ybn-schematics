@@ -1,0 +1,18 @@
+import { <%= componentName %> } from './<%= componentFilename %>';
+import { moduleMetadata, Meta, Story } from '@storybook/angular';
+<% if (hasModule) { %>import { <%= moduleName %> } from './<%= moduleFilename %>';<% } %>
+
+export default {
+    component: <%= componentName %>,
+    title: '<%= classify(title) %>/<%= classify(name) %>',
+    decorators: [
+        moduleMetadata({
+            <% if (hasModule) { %>imports: [<%= moduleName %>]<% } %><% if (!hasModule) { %>declarations: [<%= componentName %>]<% } %>
+        })
+    ]
+} as Meta;
+
+export const <%= classify(name) %>: Story<<%= componentName %>> = (props) => ({
+    component: <%= componentName %>,
+    props
+});

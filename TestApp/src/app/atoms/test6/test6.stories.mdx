@@ -1,0 +1,26 @@
+import { Story, Meta, ArgsTable, Source, Title, Description } from '@storybook/addon-docs/blocks';
+import { Test6Component } from './test6.component';
+import { Test6Module } from './test6.module';
+import { moduleMetadata } from '@storybook/angular';
+
+<Meta title="Atoms/Test6" component={Test6Component} decorators={[moduleMetadata({
+    imports: [Test6Module]
+})]} />
+
+<Title />
+
+<Description />
+
+
+export const Template = (args) => ({
+    props: args
+});
+
+<Story name="Test6Component" args={{}}>
+    {Template.bind({})}
+</Story>
+
+<Source story="Test6Component" />
+
+<ArgsTable story="Test6Component" />
+

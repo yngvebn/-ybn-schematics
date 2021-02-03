@@ -1,0 +1,26 @@
+import { Story, Meta, ArgsTable, Source, Title, Description } from '@storybook/addon-docs/blocks';
+import { NoStoriesComponent } from './no-stories.component';
+
+import { moduleMetadata } from '@storybook/angular';
+
+<Meta title="NoStories/NoStories" component={NoStoriesComponent} decorators={[moduleMetadata({
+    declarations: [NoStoriesComponent]
+})]} />
+
+<Title />
+
+<Description />
+
+
+export const Template = (args) => ({
+    props: args
+});
+
+<Story name="NoStoriesComponent" args={{}}>
+    {Template.bind({})}
+</Story>
+
+<Source story="NoStoriesComponent" />
+
+<ArgsTable story="NoStoriesComponent" />
+

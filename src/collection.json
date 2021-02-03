@@ -13,6 +13,12 @@
             "description": "Create an Angular atom with module.",
             "factory": "./hello/index#atom",
             "schema": "./hello/schema.json"
+        },
+        "story": {
+            "aliases": ["st"],
+            "description": "Create a Storybook story for the component in current folder",
+            "factory": "./hello/index#story",
+            "schema": "./hello/story.schema.json"
         }
     }
 }

@@ -1,0 +1,26 @@
+import { Story, Meta, ArgsTable, Source, Title, Description } from '@storybook/addon-docs/blocks';
+import { MyShinyAtomComponent } from './my-shiny-atom.component';
+
+import { moduleMetadata } from '@storybook/angular';
+
+<Meta title="MyShinyAtom/MyShinyAtom" component={MyShinyAtomComponent} decorators={[moduleMetadata({
+    declarations: [MyShinyAtomComponent]
+})]} />
+
+<Title />
+
+<Description />
+
+
+export const Template = (args) => ({
+    props: args
+});
+
+<Story name="MyShinyAtomComponent" args={{}}>
+    {Template.bind({})}
+</Story>
+
+<Source story="MyShinyAtomComponent" />
+
+<ArgsTable story="MyShinyAtomComponent" />
+

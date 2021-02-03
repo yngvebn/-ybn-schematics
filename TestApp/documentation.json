@@ -261,6 +261,109 @@
             "stylesData": ""
         },
         {
+            "name": "MyShinyAtomComponent",
+            "id": "component-MyShinyAtomComponent-ffd54ae957364da7b39ad654b4c84568",
+            "file": "src/app/atoms/my-shiny-atom/my-shiny-atom.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-my-shiny-atom",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  Would you look at that!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-my-shiny-atom',\n  template: `\n    <p>\n      Would you look at that!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class MyShinyAtomComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "NoStoriesComponent",
+            "id": "component-NoStoriesComponent-570d1346fe0a14f14de0283a562d6ec5",
+            "file": "src/app/atoms/no-stories/no-stories.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-no-stories",
+            "styleUrls": [
+                "./no-stories.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./no-stories.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>Just a simple component to test the stories </p>\n",
+            "rawdescription": "Just a simple component to test the stories ",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n/** Just a simple component to test the stories */\n@Component({\n  selector: 'app-no-stories',\n  templateUrl: './no-stories.component.html',\n  styleUrls: ['./no-stories.component.scss']\n})\nexport class NoStoriesComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./no-stories.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>no-stories works!</p>\n"
+        },
+        {
             "name": "PageComponent",
             "id": "component-PageComponent-cca1a8911321fa17756ce90c90de65cc",
             "file": "src/stories/page.component.ts",
@@ -323,8 +426,290 @@
             "stylesData": ""
         },
         {
+            "name": "Test2Component",
+            "id": "component-Test2Component-698346501c85da9592dd696dd7678801",
+            "file": "src/app/atoms/test2/test2.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-test2",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  test2 works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-test2',\n  template: `\n    <p>\n      test2 works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class Test2Component implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "Test3Component",
+            "id": "component-Test3Component-3d15fcb5d0e1c2adb9b4a38e1d2a0479",
+            "file": "src/app/atoms/test3/test3.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-test3",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  test3 works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-test3',\n  template: `\n    <p>\n      test3 works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class Test3Component implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "Test4Component",
+            "id": "component-Test4Component-7989730503bac069bfbafde013928119",
+            "file": "src/app/atoms/test4/test4.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-test4",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  test4 works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-test4',\n  template: `\n    <p>\n      test4 works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class Test4Component implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "Test5Component",
+            "id": "component-Test5Component-42335035867e9fac1bd706c52d981158",
+            "file": "src/app/atoms/test5/test5.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-test5",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  test5 works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-test5',\n  template: `\n    <p>\n      test5 works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class Test5Component implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "Test6Component",
+            "id": "component-Test6Component-288b8d707b2ef1734998707be559dda8",
+            "file": "src/app/atoms/test6/test6.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-test6",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  test6 works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-test6',\n  template: `\n    <p>\n      test6 works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class Test6Component implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "Test7Component",
+            "id": "component-Test7Component-67fc3d9a68414293a1fd4fe0484c994c",
+            "file": "src/app/atoms/test7/test7.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-test7",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  test7 works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-test7',\n  template: `\n    <p>\n      test7 works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class Test7Component implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
             "name": "TestComponent",
-            "id": "component-TestComponent-13ae88275e5b0ff295b7230fb5350e82",
+            "id": "component-TestComponent-407affb89e52bffd84945b60d549b75f",
             "file": "src/app/test/test.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -349,7 +734,7 @@
             ],
             "outputsClass": [
                 {
-                    "name": "doSomething",
+                    "name": "onSomething",
                     "defaultValue": "new EventEmitter<string>()",
                     "line": 11,
                     "type": "EventEmitter"
@@ -371,7 +756,7 @@
             "description": "<p>Test component </p>\n",
             "rawdescription": "Test component ",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n/** Test component */\n@Component({\n    selector: 'app-test',\n    templateUrl: './test.component.html',\n    styleUrls: ['./test.component.scss']\n})\nexport class TestComponent implements OnInit {\n    @Input() public text: string;\n    @Output() public doSomething = new EventEmitter<string>();\n    constructor() { }\n\n    ngOnInit(): void {\n    }\n\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n/** Test component */\n@Component({\n    selector: 'app-test',\n    templateUrl: './test.component.html',\n    styleUrls: ['./test.component.scss']\n})\nexport class TestComponent implements OnInit {\n    @Input() public text: string;\n    @Output() public onSomething = new EventEmitter<string>();\n    constructor() { }\n\n    ngOnInit(): void {\n    }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -389,7 +774,63 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<h1 (click)=\"doSomething.emit(text)\">{{ text }}</h1>"
+            "templateData": "<h1 (click)=\"onSomething.emit(text)\">{{ text }}</h1>"
+        },
+        {
+            "name": "WithStoriesComponent",
+            "id": "component-WithStoriesComponent-763aed9ba153d330cfd97cf8eb41e029",
+            "file": "src/app/atoms/with-stories/with-stories.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-with-stories",
+            "styleUrls": [
+                "./with-stories.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./with-stories.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-with-stories',\n  templateUrl: './with-stories.component.html',\n  styleUrls: ['./with-stories.component.scss']\n})\nexport class WithStoriesComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./with-stories.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>with-stories works!</p>\n"
         }
     ],
     "modules": [
@@ -405,6 +846,9 @@
                     "elements": [
                         {
                             "name": "AppComponent"
+                        },
+                        {
+                            "name": "NoStoriesComponent"
                         },
                         {
                             "name": "TestComponent"
@@ -432,10 +876,273 @@
                     "elements": []
                 }
             ]
+        },
+        {
+            "name": "MyShinyAtomModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "MyShinyAtomComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "Test2Module",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "Test2Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "Test2Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "Test3Module",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "Test3Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "Test3Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "Test4Module",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "Test4Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "Test4Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "Test5Module",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "Test5Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "Test5Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "Test6Module",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "Test6Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "Test6Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "Test7Module",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "Test7Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "Test7Component"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
         }
     ],
     "miscellaneous": {
         "variables": [
+            {
+                "name": "App",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.stories.ts",
+                "type": "Story<AppComponent>",
+                "defaultValue": "(props) => ({\r\n    component: AppComponent,\r\n    props\r\n})"
+            },
             {
                 "name": "context",
                 "ctype": "miscellaneous",
@@ -443,14 +1150,6 @@
                 "file": "src/test.ts",
                 "type": "",
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/test/test.stories.ts",
-                "type": "",
-                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "environment",
@@ -507,6 +1206,14 @@
                 "file": "src/stories/Page.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "NoStories",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/atoms/no-stories/no-stories.stories.ts",
+                "type": "Story<NoStoriesComponent>",
+                "defaultValue": "(props) => ({\r\n    component: NoStoriesComponent,\r\n    props\r\n})"
             },
             {
                 "name": "Primary",
@@ -570,6 +1277,54 @@
                 "file": "src/app/test/test.stories.ts",
                 "type": "Story<TestComponent>",
                 "defaultValue": "(args: TestComponent) => ({\r\n    component: TestComponent,\r\n    props: args\r\n})"
+            },
+            {
+                "name": "Test",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/test/test.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Test2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/atoms/test2/test2.stories.ts",
+                "type": "",
+                "defaultValue": "(props) => ({\r\n    props\r\n})"
+            },
+            {
+                "name": "Test3",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/atoms/test3/test3.stories.ts",
+                "type": "",
+                "defaultValue": "(props) => ({\r\n    props\r\n})"
+            },
+            {
+                "name": "Test5",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/atoms/test5/test5.stories.ts",
+                "type": "Story<Test5Component>",
+                "defaultValue": "(props) => ({\r\n    component: Test5Component,\r\n    props\r\n})"
+            },
+            {
+                "name": "Test7",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/atoms/test7/test7.stories.ts",
+                "type": "Story<Test7Component>",
+                "defaultValue": "(props) => ({\r\n    component: Test7Component,\r\n    props\r\n})"
+            },
+            {
+                "name": "WithStories",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/atoms/with-stories/with-stories.stories.ts",
+                "type": "Story<WithStoriesComponent>",
+                "defaultValue": "(props) => ({\r\n    component: WithStoriesComponent,\r\n    props\r\n})"
             }
         ],
         "functions": [
@@ -653,6 +1408,16 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/app/app.stories.ts": [
+                {
+                    "name": "App",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.stories.ts",
+                    "type": "Story<AppComponent>",
+                    "defaultValue": "(props) => ({\r\n    component: AppComponent,\r\n    props\r\n})"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -668,24 +1433,6 @@
                     "subtype": "variable",
                     "file": "src/test.ts",
                     "type": "literal type"
-                }
-            ],
-            "src/app/test/test.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/test/test.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/test/test.stories.ts",
-                    "type": "Story<TestComponent>",
-                    "defaultValue": "(args: TestComponent) => ({\r\n    component: TestComponent,\r\n    props: args\r\n})"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -801,6 +1548,84 @@
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
                 }
+            ],
+            "src/app/atoms/no-stories/no-stories.stories.ts": [
+                {
+                    "name": "NoStories",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/atoms/no-stories/no-stories.stories.ts",
+                    "type": "Story<NoStoriesComponent>",
+                    "defaultValue": "(props) => ({\r\n    component: NoStoriesComponent,\r\n    props\r\n})"
+                }
+            ],
+            "src/app/test/test.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/test/test.stories.ts",
+                    "type": "Story<TestComponent>",
+                    "defaultValue": "(args: TestComponent) => ({\r\n    component: TestComponent,\r\n    props: args\r\n})"
+                },
+                {
+                    "name": "Test",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/test/test.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/app/atoms/test2/test2.stories.ts": [
+                {
+                    "name": "Test2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/atoms/test2/test2.stories.ts",
+                    "type": "",
+                    "defaultValue": "(props) => ({\r\n    props\r\n})"
+                }
+            ],
+            "src/app/atoms/test3/test3.stories.ts": [
+                {
+                    "name": "Test3",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/atoms/test3/test3.stories.ts",
+                    "type": "",
+                    "defaultValue": "(props) => ({\r\n    props\r\n})"
+                }
+            ],
+            "src/app/atoms/test5/test5.stories.ts": [
+                {
+                    "name": "Test5",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/atoms/test5/test5.stories.ts",
+                    "type": "Story<Test5Component>",
+                    "defaultValue": "(props) => ({\r\n    component: Test5Component,\r\n    props\r\n})"
+                }
+            ],
+            "src/app/atoms/test7/test7.stories.ts": [
+                {
+                    "name": "Test7",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/atoms/test7/test7.stories.ts",
+                    "type": "Story<Test7Component>",
+                    "defaultValue": "(props) => ({\r\n    component: Test7Component,\r\n    props\r\n})"
+                }
+            ],
+            "src/app/atoms/with-stories/with-stories.stories.ts": [
+                {
+                    "name": "WithStories",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/atoms/with-stories/with-stories.stories.ts",
+                    "type": "Story<WithStoriesComponent>",
+                    "defaultValue": "(props) => ({\r\n    component: WithStoriesComponent,\r\n    props\r\n})"
+                }
             ]
         },
         "groupedFunctions": {
@@ -888,7 +1713,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 7,
+        "count": 5,
         "status": "low",
         "files": [
             {
@@ -907,6 +1732,157 @@
                 "name": "AppComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "App",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/my-shiny-atom/my-shiny-atom.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MyShinyAtomComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/no-stories/no-stories.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NoStoriesComponent",
+                "coveragePercent": 33,
+                "coverageCount": "1/3",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/app/atoms/no-stories/no-stories.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "NoStories",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test2/test2.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Test2Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test2/test2.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Test2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test3/test3.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Test3Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test3/test3.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Test3",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test4/test4.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Test4Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test5/test5.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Test5Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test5/test5.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Test5",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test6/test6.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Test6Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test7/test7.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Test7Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/test7/test7.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Test7",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/with-stories/with-stories.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "WithStoriesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atoms/with-stories/with-stories.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithStories",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -959,7 +1935,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Default",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -969,7 +1945,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Template",
+                "name": "Test",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

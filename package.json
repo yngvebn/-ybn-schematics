@@ -25,5 +25,5 @@
     "build:watch": "tsc -p tsconfig.json --watch",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
