@@ -3,7 +3,9 @@ https://medium.com/@tomastrajan/total-guide-to-custom-angular-schematics-5c50cf9
 
 ## Develop
 
-npm run build:watch
+Start watching for changes
+
+`npm run build:watch`
 
 Now you can run schematics from ./TestApp to see what happens. Changes done in index.ts in src/hello/index.ts (yeah, I know) will automatically build and be available.
 
