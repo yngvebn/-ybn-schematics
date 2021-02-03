@@ -1,29 +1,10 @@
 https://medium.com/@tomastrajan/total-guide-to-custom-angular-schematics-5c50cf90cdb4
 
-# Getting Started With Schematics
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+## Develop
 
-### Testing
+npm run build:watch
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+Now you can run schematics from ./TestApp to see what happens. Changes done in index.ts in src/hello/index.ts (yeah, I know) will automatically build and be available.
 
-Check the documentation with
-```bash
-schematics --help
-```
-
-### Unit Testing
-
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
-```
-
-That's it!
+Test your output with `--dry-run` to avoid actually creating files, or `--force` to overwrite existing files. E.g. `ng g atom MyShinyAtom --dry-run`
