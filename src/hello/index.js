@@ -73,7 +73,6 @@ function story(options) {
         const data = tree.getDir(options.path);
         const componentRegex = /(.*?)\.component\.ts$/g;
         var component = data.subfiles.find(f => !!componentRegex.exec(f));
-        console.log(options);
         if (component && !options.componentFilename) {
             const componentName = getClassDeclaration(tree, options.path, component);
             if (!componentName) {

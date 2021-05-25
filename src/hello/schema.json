@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema",
-    "id": "HelloSchematic",
+    "$id": "HelloSchematic",
     "title": "Hello Options Schema",
     "type": "object",
     "description": "Says hello to someone",
@@ -77,12 +77,6 @@
                 }
             ]
         },
-        "styleext": {
-            "description": "The file extension to use for style files.",
-            "type": "string",
-            "default": "css",
-            "x-deprecated": "Use \"style\" instead."
-        },
         "style": {
             "description": "The file extension or preprocessor to use for style files.",
             "type": "string",
@@ -95,12 +89,6 @@
                 "styl"
             ],
             "x-user-analytics": 5
-        },
-        "spec": {
-            "type": "boolean",
-            "description": "When true (the default), generates a  \"spec.ts\" test file for the new component.",
-            "default": true,
-            "x-deprecated": "Use \"skipTests\" instead."
         },
         "skipTests": {
             "type": "boolean",
