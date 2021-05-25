@@ -14,8 +14,7 @@
                     "style": "scss"
                 },
                 "@ybn-schematics/atom": {
-                    "inlineTemplate": true,
-                    "inlineStyle": true
+                    "inlineTemplate": true
                 }
             },
             "root": "",
