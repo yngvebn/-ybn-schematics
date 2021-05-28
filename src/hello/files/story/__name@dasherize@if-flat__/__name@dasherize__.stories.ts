@@ -3,7 +3,6 @@ import { moduleMetadata, Meta, Story } from '@storybook/angular';
 <% if (hasModule) { %>import { <%= moduleName %> } from './<%= moduleFilename %>';<% } %>
 
 export default {
-    component: <%= componentName %>,
     title: '<%= classify(title) %>/<%= classify(name) %>',
     decorators: [
         moduleMetadata({
