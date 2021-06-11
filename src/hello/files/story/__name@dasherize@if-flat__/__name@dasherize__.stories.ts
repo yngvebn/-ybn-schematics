@@ -4,6 +4,7 @@ import { moduleMetadata, Meta, Story } from '@storybook/angular';
 
 export default {
     title: '<%= classify(title) %>/<%= classify(name) %>',
+    component: <%= componentName %>,
     decorators: [
         moduleMetadata({
             <% if (hasModule) { %>imports: [<%= moduleName %>]<% } %><% if (!hasModule) { %>declarations: [<%= componentName %>]<% } %>
@@ -12,6 +13,5 @@ export default {
 } as Meta;
 
 export const <%= classify(name) %>: Story<<%= componentName %>> = (props) => ({
-    component: <%= componentName %>,
     props
 });
