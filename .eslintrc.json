@@ -1,0 +1,173 @@
+{
+    "root": true,
+    "ignorePatterns": [
+        "projects/**/*"
+    ],
+    "plugins": [
+        "unused-imports"
+    ],
+    "extends": ["plugin:storybook/recommended"],
+    "overrides": [
+        {
+            "files": [
+                "*.ts"
+            ],
+            "excludedFiles": [],
+            "parserOptions": {
+                "project": [
+                    "tsconfig.json"
+                ],
+                "sourceType": "module",
+                "createDefaultProgram": true
+            },
+            "extends": [
+                "plugin:@angular-eslint/ng-cli-compat",
+                "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
+                "plugin:@angular-eslint/template/process-inline-templates"
+            ],
+            "rules": {
+                "@typescript-eslint/explicit-member-accessibility": [
+                    "error",
+                    {
+                        "accessibility": "explicit",
+                        "overrides": {
+                            "accessors": "explicit",
+                            "constructors": "off"
+                        }
+                    }
+                ],
+                "@typescript-eslint/naming-convention": [
+                    "error",
+                    {
+                        "selector": "enumMember",
+                        "format": [
+                            "strictCamelCase",
+                            "PascalCase"
+                        ]
+                    }
+                ],
+                "@typescript-eslint/no-namespace": "off",
+                "@typescript-eslint/ban-types": [
+                    "error",
+                    {
+                        "types": {
+                            "Function": false,
+                            "Effect": "warn"
+                        }
+                    }
+                ],
+                "@angular-eslint/no-output-native": "off",
+                "@angular-eslint/component-class-suffix": [
+                    "warn",
+                    {
+                        "suffixes": [
+                            "Component",
+                            "Container",
+                            "Page",
+                            "Root",
+                            "Directive"
+                        ]
+                    }
+                ],
+                "@angular-eslint/directive-class-suffix": [
+                    "warn",
+                    {
+                        "suffixes": [
+                            "Component",
+                            "Directive"
+                        ]
+                    }
+                ],
+                "@typescript-eslint/member-ordering": [
+                    0,
+                    {
+                        "default": [
+                            "public-decorated-field",
+                            "protected-field",
+                            "private-field",
+                            "constructor"
+                        ]
+                    }
+                ],
+                "@angular-eslint/no-input-rename": "off",
+                "no-bitwise": "off",
+                "eol-last": "warn",
+                "no-shadow": "off",
+                "no-fallthrough": "off",
+                "radix": "off",
+                "guard-for-in": "off",
+                "id-blacklist": "off",
+                "@typescript-eslint/dot-notation": "off",
+                "@angular-eslint/no-output-on-prefix": "off",
+                "@angular-eslint/no-inputs-metadata-property": "off",
+                "@typescript-eslint/consistent-type-assertions": 0,
+                "@angular-eslint/component-selector": [
+                    "error",
+                    {
+                        "prefix": "r22",
+                        "style": "kebab-case"
+                    }
+                ],
+                "@angular-eslint/directive-selector": [
+                    "off",
+                    {
+                        "prefix": "r22",
+                        "style": "kebab-case"
+                    }
+                ],
+                "curly": "off",
+                "no-underscore-dangle": 0,
+                "brace-style": [
+                    "error",
+                    "1tbs"
+                ],
+                "arrow-body-style": 2,
+                "comma-dangle": [
+                    "warn",
+                    "never"
+                ],
+                "prefer-arrow/prefer-arrow-functions": 0,
+                "max-len": 0,
+                "import/no-default-export": "off",
+                "no-redeclare": "off",
+                "prefer-template": "error",
+                "prefer-const": "error",
+                "indent": "off",
+                "@typescript-eslint/indent": [
+                    "warn",
+                    4,
+                    { "SwitchCase": 1 }
+                ]
+            }
+        },
+        {
+            "files": [
+                "*.html"
+            ],
+            "extends": [
+                "plugin:@angular-eslint/template/recommended"
+            ],
+            "rules": {
+                "@angular-eslint/template/no-duplicate-attributes": [
+                    "warn" // For some reason, this complains about [class.disabled]="something" and [disabled]="someBool" on the same element, so I'll keep it as a warning for now
+                ],
+                "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+                "@angular-eslint/template/accessibility-alt-text": "warn",
+                "@angular-eslint/template/accessibility-elements-content": "warn",
+                "@angular-eslint/template/accessibility-label-has-associated-control": "off",
+                "@angular-eslint/template/accessibility-table-scope": "warn",
+                "@angular-eslint/template/accessibility-valid-aria": "warn",
+                "unused-imports/no-unused-imports": "error",
+                "unused-imports/no-unused-vars": [
+                    "warn",
+                    {
+                        "vars": "all",
+                        "varsIgnorePattern": "^_",
+                        "args": "after-used",
+                        "argsIgnorePattern": "^_"
+                    }
+                ]
+            }
+        }
+    ]
+}

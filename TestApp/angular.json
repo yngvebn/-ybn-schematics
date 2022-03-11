@@ -2,7 +2,7 @@
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "cli": {
       "analytics": false,
-      "defaultCollection": "C:\\github\\ybn-schematics\\src\\collection.json"
+      "defaultCollection": "C:\\github\\-ybn-schematics\\src\\collection.json"
     },
     "version": 1,
     "newProjectRoot": "projects",
@@ -11,7 +11,8 @@
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
-                    "style": "scss"
+                    "style": "scss",
+                    "changeDetection": "OnPush"
                 },
                 "@ybn-schematics/atom": {
                     "inlineTemplate": true

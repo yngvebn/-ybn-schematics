@@ -39,7 +39,7 @@ function getClassDeclaration(tree, p, filename) {
     const identifiers = classDeclaration
         .getChildren()
         .filter(ts.isIdentifier)
-        .map((node) => node.getText());
+        .map(node => node.getText());
     return identifiers[0];
 }
 function getModuleExports(source) {
@@ -50,8 +50,7 @@ function getModuleExports(source) {
         return [];
     }
     const assignment = matchingProperties[0];
-    if (!assignment ||
-        assignment.initializer.kind !== ts.SyntaxKind.ArrayLiteralExpression) {
+    if (!assignment || assignment.initializer.kind !== ts.SyntaxKind.ArrayLiteralExpression) {
         return [];
     }
     const arrLiteral = assignment.initializer;
@@ -90,7 +89,7 @@ function story(options) {
         options.title = title[title.length - 1];
         const data = tree.getDir(componentPath);
         const componentRegex = /(.*?)\.component\.ts$/g;
-        var component = data.subfiles.find((f) => !!componentRegex.exec(f));
+        var component = data.subfiles.find(f => !!componentRegex.exec(f));
         console.log('story:component:', options.componentFilename, options.componentName);
         if (component /* && !options.componentFilename*/) {
             const componentName = getClassDeclaration(tree, componentPath, component);
@@ -101,11 +100,11 @@ function story(options) {
             options.componentFilename = component.replace(/\.ts$/, '');
         }
         const moduleRegex = new RegExp(`(.*)\.module\.ts$`);
-        const modules = data.subfiles.filter((f) => {
+        const modules = data.subfiles.filter(f => {
             const regex = !!moduleRegex.exec(f);
             return regex;
         });
-        var module = modules.find((module) => moduleHasExportedComponent(tree, componentPath, module, options.componentName));
+        var module = modules.find(module => moduleHasExportedComponent(tree, componentPath, module, options.componentName));
         if (module && !options.moduleFilename) {
             options.moduleFilename = module.replace(/\.ts$/, '');
             options.moduleName = getClassDeclaration(tree, componentPath, module);
@@ -114,13 +113,11 @@ function story(options) {
         options.name = options.componentName.replace(/Component/g, '');
         const sourceTemplates = schematics_1.url('./files/story');
         const sourceParametrizedTemplates = schematics_1.apply(sourceTemplates, [
-            options.mdx ? schematics_1.filter((path) => !path.endsWith('.stories.ts')) : schematics_1.noop(),
-            !options.mdx ? schematics_1.filter((path) => !path.endsWith('.stories.mdx')) : schematics_1.noop(),
-            options.skipStories
-                ? schematics_1.filter((path) => !path.endsWith('.stories.ts'))
-                : schematics_1.noop(),
+            options.mdx ? schematics_1.filter(path => !path.endsWith('.stories.ts')) : schematics_1.noop(),
+            !options.mdx ? schematics_1.filter(path => !path.endsWith('.stories.mdx')) : schematics_1.noop(),
+            options.skipStories ? schematics_1.filter(path => !path.endsWith('.stories.ts')) : schematics_1.noop(),
             schematics_1.template(Object.assign(Object.assign(Object.assign({}, options), core_1.strings), { 'if-flat': (s) => (options.flat ? '' : s) })),
-            schematics_1.move(options.path),
+            schematics_1.move(options.path)
         ]);
         const rule = schematics_1.mergeWith(sourceParametrizedTemplates, schematics_1.MergeStrategy.AllowCreationConflict);
         return schematics_1.chain([rule]);
@@ -136,8 +133,7 @@ function atom(options) {
             const projectName = options.project || workspaceConfig.defaultProject;
             const project = workspaceConfig.projects[projectName];
             const schematics = project.schematics && project.schematics['@schematics/angular:module'];
-            atomSchematics =
-                project.schematics && project.schematics['@ybn-schematics/atom'];
+            atomSchematics = project.schematics && project.schematics['@ybn-schematics/atom'];
             if (options.path === undefined && project) {
                 options.path = workspace_1.buildDefaultPath(project);
             }
@@ -151,7 +147,7 @@ function atom(options) {
         const sourceTemplates = schematics_1.url('./files/module');
         const sourceParametrizedTempalates = schematics_1.apply(sourceTemplates, [
             schematics_1.template(Object.assign(Object.assign(Object.assign({}, options), core_1.strings), { 'if-flat': (s) => (options.flat ? '' : s) })),
-            schematics_1.move(parsedPath.path),
+            schematics_1.move(parsedPath.path)
         ]);
         const rule = schematics_1.mergeWith(sourceParametrizedTempalates, schematics_1.MergeStrategy.AllowCreationConflict);
         return schematics_1.chain([rule, component(componentOptions)]);
@@ -165,8 +161,7 @@ function component(options) {
             const workspaceConfig = JSON.parse(workspaceConfigBuffer.toString());
             const projectName = options.project || workspaceConfig.defaultProject;
             const project = workspaceConfig.projects[projectName];
-            const schematics = project.schematics &&
-                project.schematics['@schematics/angular:component'];
+            const schematics = project.schematics && project.schematics['@schematics/angular:component'];
             if (options.path === undefined && project) {
                 options.path = workspace_1.buildDefaultPath(project);
             }
@@ -181,15 +176,11 @@ function component(options) {
         const sourceTemplates = schematics_1.url('./files/component');
         const sourceParametrizedTempalates = schematics_1.apply(sourceTemplates, [
             schematics_1.template(Object.assign(Object.assign(Object.assign({}, options), core_1.strings), { 'if-flat': (s) => (options.flat ? '' : s) })),
-            schematics_1.move(parsedPath.path),
+            schematics_1.move(parsedPath.path)
         ]);
         const rule = schematics_1.mergeWith(sourceParametrizedTempalates, schematics_1.MergeStrategy.AllowCreationConflict);
         const { mdx, componentName, hasModule, sourceRoot, skipStories, componentFilename } = options, allowedComponentOptions = __rest(options, ["mdx", "componentName", "hasModule", "sourceRoot", "skipStories", "componentFilename"]);
-        return schematics_1.chain([
-            schematics_1.externalSchematic('@schematics/angular', 'component', allowedComponentOptions),
-            story(options),
-            rule,
-        ]);
+        return schematics_1.chain([schematics_1.externalSchematic('@schematics/angular', 'component', allowedComponentOptions), story(options), rule]);
     };
 }
 exports.component = component;

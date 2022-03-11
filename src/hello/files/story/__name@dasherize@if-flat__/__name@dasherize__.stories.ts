@@ -1,5 +1,5 @@
 import { <%= componentName %> } from './<%= componentFilename %>';
-import { moduleMetadata, Meta, Story } from '@storybook/angular';
+import { moduleMetadata, Meta, StoryObj } from '@storybook/angular';
 <% if (hasModule) { %>import { <%= moduleName %> } from './<%= moduleFilename %>';<% } %>
 
 export default {
@@ -10,8 +10,10 @@ export default {
             <% if (hasModule) { %>imports: [<%= moduleName %>]<% } %><% if (!hasModule) { %>declarations: [<%= componentName %>]<% } %>
         })
     ]
-} as Meta;
+} as Meta<<%= componentName %>>;
 
-export const <%= classify(name) %>: Story<<%= componentName %>> = (props) => ({
-    props
-});
+export const <%= classify(name) %>: StoryObj<<%= componentName %>> = {
+    args: {
+
+    }
+};
